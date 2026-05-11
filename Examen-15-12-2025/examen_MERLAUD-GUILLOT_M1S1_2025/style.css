@@ -1,0 +1,186 @@
+body {
+    background-color: #FFF8F0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3A2F25 ;
+}
+
+header {
+    background-color: #F3C892;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    background-color:  #FFF8F0;
+}
+
+div {
+    background-color:  #FFFFFF;
+    border:2px solid #F0D2B0;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction:row;
+    gap: 12px;
+}
+
+.saveurs {
+    color: #2F6F4E;
+}
+
+.menu {
+    color: #3A2F25; 
+}
+
+.menu:hover {
+        color: #FFFFFF;
+}
+
+.lien_nav {
+    background-color:#FFF8F0;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.lien_nav:hover {
+    background-color: #C97B3A;
+}
+
+#gauche {
+    column-width: 60%;
+    padding: 10px;
+    column-gap: 10px;
+    justify-content: space-around;
+}
+
+#droite {
+    column-width: 40%;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.Accueil {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.bienvenue {
+    border:2px solid #FFFFFF;
+    text-align: left;
+}
+
+.lien_recette {
+    background-color:#FFF8F0;
+    border: 2px solid #2F6F4E;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.lien_recette:hover {
+    background-color: #2F6F4E;
+}
+
+.bouton_recette {
+    color: #2F6F4E;
+}
+
+.bouton_recette:hover {
+    color: #FFF8F0;
+}
+
+img {
+    border: 2px solid orangered;
+    border-radius: 6px;
+    width: 100%; 
+    height: 70%;
+    object-fit: cover;
+}
+
+.Découvrir {
+    padding: 20px;
+    align-items: center;
+}
+
+.plats {
+    display: flex;
+    border:2px solid #FFFFFF;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.p {
+    background-color: #F0D2B0;
+    border: 2px solid #C97B3A;
+    text-align: left;
+    margin: 0px 5px;
+}
+
+.exemple {
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+table { 
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #C97B3A;
+    padding: 8x;
+    align-items: center;
+}
+
+th {
+    background-color:#F3C892;
+    border: 1px solid #C97B3A;
+}
+
+td {
+   border: 1px solid #C97B3A;
+}
+
+.propos {
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.Contact {
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.formulaire {
+    border: 2px solid #FFFFFF;
+}
+input {
+    border: 2px solid #F0D2B0;
+    border-radius: 6px;
+}
+
+textarea {
+    border: 2px solid #F0D2B0;
+    border-radius: 6px;
+}
+
+button {
+    padding: 0% 46%;
+    border:2px solid #F0D2B0;
+    border-radius: 6px;
+}
+
+.mdn {
+    color: #2F6F4E;
+}
