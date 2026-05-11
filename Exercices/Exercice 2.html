@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Indique qu'on utilise la version HTML5 -->
+<html lang="fr">
+	<head>
+		<!--lien vers le ficheir CSS-->
+		<link rel="stylesheet" href="./style.css"> 
+		<meta charset="UTF-8" />
+		<!-- Encodage des caractères pour supporter les accents et caractères spéciaux -->
+		
+		<meta
+			name="description"
+			content="Page d'exemple créée pendant le cours de programmation web."
+		/>
+		<!-- Description affichée dans les moteurs de recherche -->
+
+		<meta name="author" content="Prénom Nom" />
+		<!-- Nom de l'auteur de la page -->
+
+		<title>Mon premier site complet</title>
+		<!-- Titre affiché dans l'onglet du navigateur -->
+	</head>
+
+	<body>
+		<!-- Corps du document : tout ce qui sera visible à l'écran -->
+
+		<!-- ====================== -->
+		<!-- En-tête de la page -->
+		<!-- ====================== -->
+		<header>
+			<!-- h1 : Titre principal, il doit être unique sur la page -->
+			<h1>Bienvenue sur mon site personnel 🌐</h1>
+
+			<!-- span : élément inline pour styliser un texte spécifique -->
+			<span>
+				Créé pendant le cours de
+				<strong>programmation web</strong>.
+				<!-- strong : met en valeur (en gras) -->
+			</span>
+
+			<!-- ====================== -->
+			<!-- Menu de navigation -->
+			<!-- ====================== -->
+			<nav>
+				<!-- ul : liste non ordonnée -->
+				<ul>
+					<!--
+						Chaque lien <a> contient un attribut href="#id_section"
+						qui renvoie à une section du même nom (via l'attribut id)
+						👇 Exemple :
+						<a href="#about"> renvoie à <section id="about">
+					-->
+					<li><a href="#about">À propos</a></li>
+					<li><a href="#skills">Compétences</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- hr : ligne horizontale pour séparer visuellement les sections -->
+			<hr />
+		</header>
+
+		<!-- ====================== -->
+		<!-- Contenu principal -->
+		<!-- ====================== -->
+		<main>
+			<!-- Chaque section représente un bloc de contenu indépendant -->
+
+			<!-- ====================== -->
+			<!-- Section À propos -->
+			<!-- ====================== -->
+			<section id="about">
+				<!-- id="about" permet de créer un point d'ancrage vers lequel on peut naviguer avec href="#about" -->
+				<h2>À propos de moi</h2>
+				<p>
+					Je m'appelle <strong>Prénom Nom</strong> et j'apprends à
+					créer des sites web avec <em>HTML</em>, <em>CSS</em> et
+					<em>GitHub</em>.
+				</p>
+				<p>
+					Mon objectif : devenir autonome sur les bases du
+					développement web et comprendre comment fonctionne Internet.
+				</p>
+			</section>
+
+			<!-- ====================== -->
+			<!-- Section Compétences -->
+			<!-- ====================== -->
+			<section id="skills">
+				<h2>Mes compétences</h2>
+				<!-- ul : liste à puces -->
+				<ul>
+					<li>Structurer une page avec HTML</li>
+					<li>Appliquer du style avec CSS</li>
+					<li>Gérer un projet avec Git et GitHub</li>
+				</ul>
+			</section>
+
+			<!-- ====================== -->
+			<!-- Section Portfolio -->
+			<!-- ====================== -->
+			<section id="portfolio">
+				<h2>Mon portfolio</h2>
+				<p>Voici un aperçu de mes premiers projets :</p>
+
+				<!-- table : tableau HTML avec en-tête (thead) et corps (tbody) -->
+				<table border="1" cellpadding="8">
+					<thead>
+						<tr>
+							<!-- th : cellule d’en-tête (titre de colonne) -->
+							<th>Projet</th>
+							<th>Description</th>
+							<th>Lien</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Page HTML</td>
+							<td>
+								Une page statique avec des titres, listes et
+								images.
+							</td>
+							<td><a href="#">Voir</a></td>
+							<!-- Lien cliquable -->
+						</tr>
+						<tr>
+							<td>Portfolio perso</td>
+							<td>Une page complète avec mise en forme CSS.</td>
+							<td><a href="#">Voir</a></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Une image d'exemple :</h3>
+				<!-- img : image affichée depuis le dossier local -->
+				<img
+					src="./Grand_Prix_de_l'ACF_1906_-_le_circuit.jpg"
+					alt="Description de votre image en 2 mots"
+				/>
+				<!-- alt : texte alternatif affiché si l'image ne se charge pas -->
+			</section>
+
+			<!-- ====================== -->
+			<!-- Section Citation -->
+			<!-- ====================== -->
+			<section>
+				<h2>Inspiration</h2>
+				<!-- blockquote : citation avec l'attribut cite indiquant la source -->
+				<blockquote
+					cite="https://developer.mozilla.org/fr/docs/Web/HTML"
+				>
+					“Apprendre le HTML, c’est apprendre à parler la langue du
+					Web.”
+				</blockquote>
+			</section>
+
+			<!-- ====================== -->
+			<!-- Section Contact -->
+			<!-- ====================== -->
+			<section id="contact">
+				<h2>Contact</h2>
+				<p>Vous pouvez me contacter via le formulaire ci-dessous :</p>
+
+				<!-- form : formulaire contenant différents champs -->
+				<form>
+					<!--
+						label et input sont liés par les attributs for et id :
+						- for="value" sur le label
+						- id="value" sur le champ input
+						Cela permet, par exemple, de cliquer sur le texte du label pour activer le champ.
+					-->
+					<label for="value">Nom :</label><br />
+					<input
+						type="text"
+						id="value"
+						name="name"
+						placeholder="Votre nom"
+					/>
+					<br /><br />
+
+					<label for="email">Email :</label><br />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="exemple@mail.com"
+					/>
+					<br /><br />
+
+					<label for="message">Message :</label><br />
+					<textarea
+						id="message"
+						name="message"
+						rows="4"
+						cols="30"
+						placeholder="Votre message..."
+					></textarea>
+					<br /><br />
+
+					<!-- Bouton d'envoi du formulaire -->
+					<input type="submit" value="Envoyer" />
+				</form>
+			</section>
+		</main>
+
+		<!-- ====================== -->
+		<!-- Pied de page -->
+		<!-- ====================== -->
+		<footer>
+			<hr />
+			<p>
+				© 2025 – Mon premier site web |
+				<!-- Lien externe avec target="_blank" pour ouvrir dans un nouvel onglet -->
+				<a
+					href="https://developer.mozilla.org/fr/docs/Web/HTML"
+					target="_blank"
+					>Documentation MDN</a
+				>
+			</p>
+			<p>Fait avec ❤️ et du HTML.</p>
+		</footer>
+	</body>
+</html>

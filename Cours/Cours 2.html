@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le premier Grand prix automobile &#x1F3C1</title> 
+</head>
+
+<body>
+    <header> <!--header pour l'entête de la page-->
+        <h1>Le premier Grand prix automobile &#x1F3C1</h1> 
+        <span> Le premier Grand Prix automobile a été le <strong>Grand Prix de France</strong> en 1906 qui s'est tenu sur circuit.</span> <!--span permet de mettre un texte sans du paragraphe-->
+
+    <!--Menu de navigation-->
+    <nav> <!--nav pour la navigation, section propre à la navigation-->
+        <ul>
+            <li><a href="#Histoire">Histoire</a></li>
+            <li><a href="#Les conditions de la course">Les conditions de la course</a></li>
+            <li><a href="#Le résultat">Le résultat</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+    
+    <main> <!--main pour le contenu principal de la page-->
+    <center>
+        <section id="Histoire"> <!--id pour faire un lien vers cette section-->
+            <h2>Histoire</h2>
+                <p>Le Grand Prix automobile de France 1906, officiellement dénommé Grand Prix de l'Automobile Club de France 1906, est le <strong>premier Grand Prix automobile</strong>  organisé par l'Automobile Club de France (ACF).
+                <p>Il est créé à l'initiative de l'industrie automobile française dans le but de disposer d'une <strong>alternative aux coupes Gordon Bennett</strong> , dont le nombre de participants par pays est limité quelle que soit la taille de son industrie.</p> 
+                <p>La France ayant à cette époque <strong>laplus importante industrie automobile en Europe</strong>, le Grand Prix se tient sans limite de participants, de façon à mieux refléter la domination des Français en compétition automobile. </p>
+        </section>
+
+        <section id="Les conditions de la course">
+            <h2>Les conditions de la course</h2>   
+                <p>L'offre de financement, proposée conjointement par le conseil de la ville du Mans et les hôteliers de la région, persuade l'ACF d'organiser le futur Grand Prix dans la périphérie de la ville, où l'Automobile Club de la Sarthe (devenu plus tard l'Automobile Club de l'Ouest) a esquissé le tracé d'un circuit de <strong>103,18 km</strong>, que les concurrents emprunteront à <strong>douze reprises</strong>, six fois par jour, pour une distance totale de <strong>1 238,16 km</strong>.</p>
+                <p>Ce tracé doit permettre de reproduire les conditions de conduite dans lesquelles les automobiles de tourisme roulent quotidiennement. Outre le prestige qu'une victoire représente, c'est ainsi une « renommée technique de portée mondiale » que le constructeur victorieux remporte.</p>
+                <p>Passant par des terres agricoles ou traversant des forêts, la piste, comme la plupart des circuits de l'époque, forme un <strong>triangle</strong>.</p>
+            
+                <img src="./Grand_Prix_de_l'ACF_1906_-_le_circuit.jpg" alt="Tracé en forme de triangle"> 
+        
+                <p>La course débute à l'extérieur du village de Montfort, puis se dirige vers le sud-ouest vers Le Mans où les concurrents doivent faire face à une brusque épingle à gauche.</p> 
+                <p>Ils s'engagent ensuite sur une route essentiellement rectiligne en direction de Bouloire et Saint-Calais. Là, les pilotes contournent la ville sur une route temporaire formée de planches de bois, avant de reprendre la route conventionnelle en direction du nord, vers la périphérie sud de La Ferté-Bernard ; entre-temps, les pilotes contournent la ville de Vibraye, à nouveau à l'aide de planches de bois.</p>
+                <p>Une fois passée La Ferté-Bernard, les pilotes s'élancent sur la dernière portion du triangle, constituée entre autres d'une série de virages à gauche, avant de terminer l'épreuve par une dernière section plus technique près de Connerré.</p>      
+        </section>
+
+        <section id="Le résultat">
+            <h2>Le résultat</h2>
+            <table frame="box" border="1">
+                <caption> Le résultat de la course </caption>
+                <thead> <!--thead pour l'entête du tableau-->
+                    <tr> <!--tr pour une ligne du tableau-->
+                        <th scope="col">Position</th> <!--th pour une cellule d'entête-->
+                        <th scope="col">Pilote</th>
+                        <th scope="col">Automobile</th>
+                        <th scope="col">Temps</th>
+                    </tr>
+                </thead>
+                <tbody> <!--tbody pour le corps du tableau-->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ferenc Szisz</td> <!--td pour une cellule de données-->
+                        <td>Renault AK</td>
+                        <td>12 h 14 min 7 s 4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Felice Nazzaro</td>
+                        <td>Fiat 130 HP Corsa</td>
+                        <td>+ 32 min 19 s 4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Albert Clément</td>
+                        <td>Clément-Bayard 100 HP</td>
+                        <td>+ 35 min 39 s 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Contact">
+            <h2>Contact</h2>
+                <p>Pour plus d'information, vous pouvez me contacter : </p>
+            <form> <!--form pour un formulaire-->
+                <p><label for="Nom">Nom :</label><br> <!--label est le nom du champ-->
+                <input 
+                    type="text" 
+                    id="Nom" 
+                    name="Nom" 
+                    placeholder="Votre nom"> <!-- input est le champ, type pour donner la catégorie du champ, id pour signifier que le label et input sont lié, placeholder est le texte griser à l'intérieur-->
+                </p> 
+        
+                <p><label for="Mail">Mail :</label> <br>
+                <input 
+                    type="email" 
+                    id="Mail" 
+                    name="Mail" 
+                    placeholder="Votre mail">
+                </p>
+        
+                <p><label for="msg">Message :</label><br>
+                <textarea  
+                    id="msg" 
+                    name="msg" 
+                    rows="4" 
+                    cols="50" 
+                    placeholder="Votre message">
+                </textarea></p>
+        
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </center>
+    
+    </main>
+    
+    <hr>
+    
+    <footer>
+        <p>Copyright &#x24B8; 2025 - La première course automobile |
+        <a href="https://fr.wikipedia.org/wiki/Grand_Prix_automobile_de_France_1906"> Documentation MDN</a> </p>
+        <p>Fait avec &#x1F495; et du HTML. </p>
+    </footer>
+
+</body>
+</html>
